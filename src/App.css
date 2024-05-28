@@ -1,0 +1,76 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+    /* Cambia el fondo a blanco */
+    color: #000;
+    /* Cambia el color del texto a negro */
+}
+
+.gradiant-text {
+    -webkit-background-clip: text;
+    @apply bg-gradient-to-t from-blue-500 to-blue-800 text-transparent;
+    overflow: hidden;
+    border-right: 2px solid #000;
+    /* Cambia el color del borde a negro */
+    animation: typing-text 3s steps(40, end) forwards, blink 0.75s step-end infinite;
+    white-space: nowrap;
+    /* Corrección de propiedad */
+    display: inline-block;
+    width: 0;
+}
+
+@keyframes typing-text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+/* Actualiza otros estilos necesarios */
+
+header {
+    background-color: #fff;
+    /* Fondo blanco para el header */
+    color: #000;
+    /* Texto negro para el header */
+}
+
+footer {
+    background-color: #fff;
+    /* Fondo blanco para el footer */
+    color: #000;
+    /* Texto negro para el footer */
+}
+
+/* Asegúrate de cambiar los colores de los botones también */
+button {
+    color: #fff;
+}
+
+button.bg-gradient-to-t {
+    background: linear-gradient(to top, #1e3a8a, #3b82f6);
+    /* Gradiente azul */
+}
+
+button:hover {
+    background: linear-gradient(to top, #1e40af, #2563eb);
+    /* Gradiente azul oscuro */
+}
