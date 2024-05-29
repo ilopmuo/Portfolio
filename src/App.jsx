@@ -92,7 +92,7 @@ function App() {
             <h2 className="text-2xl font-semibold text-black">Projects</h2>
             <div className="flex flex-col sm:flex-row gap-10 mt-11">
               <div className="border border-gray-300 rounded-md p-5 flex-1 bg-white text-black">
-                <img src="keylogger.PNG" className="w-full h-auto" />
+                <img className="w-full h-auto" />
                 <h3 className="text-2xl font-semibold mt-8">
                   PYTHON KEYLOGGER
                 </h3>
@@ -103,11 +103,11 @@ function App() {
                   <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white">
                     No descargar!
                   </button>
-                  <a href="https://github.com/ilopmuo/Keylogger" target="_blank">
-                    <button className="flex-1 text-sm py-3 border rounded-full border-blue-500 text-blue-500 hover:text-blue-700 hover:border-blue-700">
-                      Github
-                    </button>
-                  </a>
+
+                  <button className="flex-1 text-sm py-3 border rounded-full border-blue-500 text-blue-500 hover:text-blue-700 hover:border-blue-700">
+                    Github
+                  </button>
+
                 </div>
               </div>
               <div className="border border-gray-300 rounded-md p-5 flex-1 bg-white text-black">
